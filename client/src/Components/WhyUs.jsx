@@ -8,7 +8,7 @@ function WhyUs() {
   return (
     <Grid
       sx={{
-        padding: ["24px", "48px"],
+        padding: ["24px", "64px 48px"],
         background: "quaternary",
         gridTemplateColumns: ["repeat(1, 1fr)", "repeat(2, 1fr)"],
       }}
@@ -84,8 +84,7 @@ function WhyUs() {
                     fontWeight: "600",
                   }}
                 >
-                  {" "}
-                  {item}{" "}
+                  {item}
                 </Text>
               </Flex>
             );
@@ -118,8 +117,7 @@ function WhyUs() {
             left: "-10%",
           }}
         >
-          {
-           whyUsImgPointer.map((cardData) => {
+          {whyUsImgPointer.map((cardData) => {
             return (
               <Grid
                 sx={{

@@ -13,7 +13,7 @@ function WhatBeDo() {
         display: "block",
         height: ["fit-content"],
         width: "100%",
-        padding: ["24px", "48px"],
+        padding: ["24px", "64px 48px"],
         border: "2px solid black",
         background: "tertiary",
         // placeContent: "center",
@@ -66,7 +66,7 @@ function WhatBeDo() {
                 gridTemplateColumns: ["1fr", "1fr", "1fr 4fr"],
                 gap: ["12px", "24px"],
                 // border: "1px solid black",
-                padding:[ "24px","48px"],
+                padding: ["24px", "64px 48px"],
                 background: "white",
                 boxShadow: "0 5px 14px 0 rgba(8, 15, 52, 0.04)",
                 borderRadius: "24px",
@@ -96,8 +96,7 @@ function WhatBeDo() {
                     fontWeight: "600",
                   }}
                 >
-                  {" "}
-                  {card.title}{" "}
+                  {card.title}
                 </Text>
                 <Text
                   sx={{
@@ -106,8 +105,7 @@ function WhatBeDo() {
                     lineHeight: 1.2,
                   }}
                 >
-                  {" "}
-                  {card.text}{" "}
+                  {card.text}
                 </Text>
               </Box>
             </Grid>

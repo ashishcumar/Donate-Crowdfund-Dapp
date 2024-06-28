@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes as ReactRoutes, Route } from "react-router-dom";
 import App from "../App";
-import Donate from "../Components/Donate";
+import Donate from "../pages/Donate";
 
 const Routes = () => {
   return (

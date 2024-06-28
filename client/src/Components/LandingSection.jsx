@@ -3,15 +3,17 @@ import React from "react";
 import landingBg from "../assets/landingBg.jpg";
 import donateLogo from "../assets/donateLogo.svg";
 import DonateBtn from "./DonateBtn";
+import { useNavigate } from "react-router";
 
 function LandingSection() {
+  const navigate = useNavigate();
   return (
     <Grid
       sx={{
         position: "relative",
         minHeight: "100vh",
         width: "100%",
-        justifyContent:"space-between",
+        justifyContent: "space-between",
       }}
     >
       <Image
@@ -28,17 +30,22 @@ function LandingSection() {
       />
       <Flex
         sx={{
-          padding: ["24px", "48px"],
+          padding: ["24px", "64px 48px"],
           border: "1px solid red",
           justifyContent: "space-between",
           alignItems: "center",
           height: "fit-content",
-         }}
+        }}
       >
         <Image
           src={donateLogo}
           alt="logo"
-          sx={{ height: ["24px", "36px"], objectFit: "contain" }}
+          sx={{
+            height: ["24px", "36px"],
+            objectFit: "contain",
+            cursor: "pointer",
+          }}
+          onClick={() => navigate("/")}
         />
         <Box sx={{ border: "2px solid red" }}>
           <DonateBtn />
@@ -47,7 +54,7 @@ function LandingSection() {
       <Grid
         sx={{
           border: "2px solid brown",
-          padding: ["24px", "48px"],
+          padding: ["24px", "64px 48px"],
           margin: "auto",
         }}
       >
@@ -62,8 +69,7 @@ function LandingSection() {
               lineHeight: 1,
             }}
           >
-            {" "}
-            Help us reforest the Amazonia{" "}
+            Help us reforest the Amazonia
           </Text>
           <Text
             sx={{
@@ -75,7 +81,6 @@ function LandingSection() {
               lineHeight: 1,
             }}
           >
-            {" "}
             and bring back worlds heart
           </Text>
         </Box>
@@ -84,7 +89,7 @@ function LandingSection() {
             color: "white",
             textAlign: "center",
             fontSize: ["18px", "24px"],
-            width:["100%" ,"80%"],
+            width: ["100%", "80%"],
             margin: "auto",
           }}
         >
@@ -95,7 +100,7 @@ function LandingSection() {
           generations.
         </Text>
         <Box sx={{ margin: ["24px auto", "48px auto"] }}>
-          <DonateBtn isLarge/>
+          <DonateBtn isLarge />
         </Box>
       </Grid>
     </Grid>

@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import rotatingImgBg from "../assets/rotatingImgBg.svg";
 import DonateBtn from "./DonateBtn";
@@ -8,7 +8,7 @@ function Achievements() {
   return (
     <Grid
       sx={{
-        padding: ["24px", "48px"],
+        padding: ["24px", "64px 48px"],
         position: "relative",
         minHeight: "400px",
         overflow: "hidden",
@@ -109,6 +109,7 @@ function Achievements() {
           {achievements.map((card) => {
             return (
               <Box
+                key={card.text}
                 sx={{
                   border: "1px solid yellow",
                   width: "fit-content",
@@ -142,8 +143,7 @@ function Achievements() {
                     fontWeight: "500",
                   }}
                 >
-                  {" "}
-                  {card.text}{" "}
+                  {card.text}
                 </Text>
               </Box>
             );

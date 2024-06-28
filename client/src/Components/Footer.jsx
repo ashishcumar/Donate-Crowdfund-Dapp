@@ -1,8 +1,8 @@
-import { Box, Divider, Flex, Grid, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Divider, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import React from "react";
 import footerImage from "../assets/footerImage.svg";
 import donateLogo from "../assets/donateLogo.svg";
-import DonateBtn from './DonateBtn';
+import DonateBtn from "./DonateBtn";
 
 function Footer() {
   return (
@@ -18,13 +18,20 @@ function Footer() {
           background: "septenary",
         }}
       >
-        <Flex sx={{ justifyContent: "space-between",alignItems:'center',flexWrap:'wrap',gap:"24px" }}>
+        <Flex
+          sx={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "24px",
+          }}
+        >
           <Box>
             <Image
               src={donateLogo}
               alt="donateLogo"
               sx={{ height: "36px", objectFit: "contain", margin: "12px 0" }}
-            />{" "}
+            />
             <Text sx={{ color: "white", fontSize: ["14px", "18px"] }}>
               Help us reforest the Amazonia and bring back worlds heart.
             </Text>
@@ -34,7 +41,7 @@ function Footer() {
           </Box>
         </Flex>
         <Divider sx={{ border: "1px solid grey", margin: "36px 0" }} />
-        <Flex sx={{justifyContent:"space-between",alignItems:'center'}}>
+        <Flex sx={{ justifyContent: "space-between", alignItems: "center" }}>
           <Box sx={{ color: "white", fontSize: ["12px", "16px"] }}>
             Copyright © Donate X 2024. All rights reserved.
           </Box>
@@ -42,7 +49,7 @@ function Footer() {
             <Text
               sx={{
                 fontSize: ["12px", "16px"],
-                color:"white"
+                color: "white",
               }}
             >
               Created By Ashish
@@ -54,4 +61,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

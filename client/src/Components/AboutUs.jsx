@@ -1,6 +1,5 @@
-import { Box, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Grid, Text } from "@chakra-ui/react";
 import React from "react";
-import aboutUs from "../assets/aboutUs.jpeg";
 import DonateBtn from "./DonateBtn";
 
 function AboutUs() {
@@ -10,10 +9,9 @@ function AboutUs() {
         display: "block",
         height: ["fit-content"],
         width: "100%",
-        padding: ["24px", "48px"],
+        padding: ["24px", "64px 48px"],
         border: "2px solid black",
         background: "tertiary",
-        // placeContent: "center",
         textAlign: "center",
       }}
     >

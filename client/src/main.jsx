@@ -4,6 +4,7 @@ import "./index.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Routes from "./routes/Routes.jsx";
 import { theme } from "./helpers/theme.js";
+import "animate.css";
 
 const customTheme = extendTheme(theme);
 console.log({ customTheme });

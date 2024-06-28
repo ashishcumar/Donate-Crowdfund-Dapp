@@ -19,6 +19,8 @@ import waterCleaning from "../assets/waterCleaned.png";
 import communityHelp from "../assets/communityHelp.png";
 import treeIconGreenBg from "../assets/treesIconGreenBg.svg";
 import heart from "../assets/heart.svg";
+import heartOutline from "../assets/heartOutline.svg";
+import treeIcon from "../assets/treeIcon.svg";
 
 export const achievements = [
   {
@@ -70,32 +72,56 @@ export const projects = [
   {
     icon: amazonforest,
     title: "Amazon Forest",
-    text: "Preserved and restored thousands of hectares, safeguarding biodiversity and supporting indigenous communities.",
+    text: "Preserved and restored thousands of hectares, safeguarding biodiversity.",
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "25M",
+    moneyRaised: "900 Eth",
   },
   {
     title: "Congo Rainforest",
-    text: "Implemented sustainable practices, preserving wildlife habitats and fostering ecological balance.",
+    text: "Implemented sustainable practices, preserving wildlife habitats .",
     icon: congoRainforest,
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "100M",
+    moneyRaised: "6000 Eht",
   },
   {
     icon: lacandonJungle,
     title: "Lacandon Jungle",
-    text: "Promoted conservation efforts, protecting endemic species and enhancing local livelihoods through eco-friendly initiatives.",
+    text: "Promoted conservation efforts, protecting endemic species.",
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "75M",
+    moneyRaised: "23k Eth",
   },
   {
     icon: amazonforest,
     title: "Amazon Forest",
-    text: "Preserved and restored thousands of hectares, safeguarding biodiversity and supporting indigenous communities.",
+    text: "Preserved and restored thousands of hectares, safeguarding biodiversity.",
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "25M",
+    moneyRaised: "900 Eth",
   },
   {
     title: "Congo Rainforest",
-    text: "Implemented sustainable practices, preserving wildlife habitats and fostering ecological balance.",
+    text: "Implemented sustainable practices, preserving wildlife habitats.",
     icon: congoRainforest,
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "75M",
+    moneyRaised: "21k Eth",
   },
   {
     icon: lacandonJungle,
     title: "Lacandon Jungle",
-    text: "Promoted conservation efforts, protecting endemic species and enhancing local livelihoods through eco-friendly initiatives.",
+    text: "Promoted conservation efforts, protecting endemic species.",
+    treeIcon: treeIcon,
+    heartOutline: heartOutline,
+    treeCount: "100M",
+    moneyRaised: "30k Eth",
   },
 ];
 

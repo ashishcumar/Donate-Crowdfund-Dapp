@@ -8,7 +8,7 @@ function Partners() {
     <Grid
       sx={{
         border: "2px solid red",
-        padding: ["24px", "48px"],
+        padding: ["24px", "64px 48px"],
         minHeight: "600px",
       }}
     >
@@ -116,7 +116,7 @@ function Partners() {
         >
           {partners.map((src) => {
             return (
-              <Box sx={{ margin: ["12px", "24px 12px"] }}>
+              <Box sx={{ margin: ["12px", "24px 12px"] }} key={src}>
                 <Image
                   src={src}
                   alt={src}
