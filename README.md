@@ -2,6 +2,13 @@
 
 Welcome to Donate X, a decentralized application (DApp) designed for crowdfunding tree reforestation efforts through Ethereum donations.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GpRjs0aBNVg" title="Donate X" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Project URL
+
+Visit the live project: [Donate X DApp](https://donation3-0.web.app/)
+
 ## Features
 
 - **Donation Options**: Users can donate fixed amounts of 5, 10, or 50 Eth, or choose a custom amount.
