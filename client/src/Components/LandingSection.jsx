@@ -31,7 +31,6 @@ function LandingSection() {
       <Flex
         sx={{
           padding: ["24px", "64px 48px"],
-          border: "1px solid red",
           justifyContent: "space-between",
           alignItems: "center",
           height: "fit-content",
@@ -47,13 +46,12 @@ function LandingSection() {
           }}
           onClick={() => navigate("/")}
         />
-        <Box sx={{ border: "2px solid red" }}>
+        <Box>
           <DonateBtn />
         </Box>
       </Flex>
       <Grid
         sx={{
-          border: "2px solid brown",
           padding: ["24px", "64px 48px"],
           margin: "auto",
         }}

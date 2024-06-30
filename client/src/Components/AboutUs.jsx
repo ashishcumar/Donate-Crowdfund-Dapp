@@ -10,7 +10,6 @@ function AboutUs() {
         height: ["fit-content"],
         width: "100%",
         padding: ["24px", "64px 48px"],
-        border: "2px solid black",
         background: "tertiary",
         textAlign: "center",
       }}

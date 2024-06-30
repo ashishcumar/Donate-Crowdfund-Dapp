@@ -65,6 +65,7 @@ function WhyUs() {
           {whyUsPointer.map((item) => {
             return (
               <Flex
+                key={item}
                 gap={"12px"}
                 sx={{ marginBottom: "12px", alignItems: "center" }}
               >
@@ -93,7 +94,6 @@ function WhyUs() {
       </Grid>
       <Grid
         sx={{
-          border: "2px solid black",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           position: ["static", "relative"],
@@ -120,11 +120,11 @@ function WhyUs() {
           {whyUsImgPointer.map((cardData) => {
             return (
               <Grid
+                key={cardData.text}
                 sx={{
                   background: "white",
                   boxShadow: "primary",
                   padding: "24px",
-                  //   border: "1px solid black",
                   gridTemplateColumns: "2fr 8fr",
                   placeContent: "center",
                   margin: "12px",
@@ -133,7 +133,7 @@ function WhyUs() {
                   gap: "12px",
                 }}
               >
-                <Box sx={{ border: "1px solid black", margin: "auto" }}>
+                <Box sx={{ margin: "auto" }}>
                   <img
                     src={cardData.icon}
                     alt="icon"

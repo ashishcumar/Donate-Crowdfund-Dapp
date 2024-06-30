@@ -40,7 +40,7 @@ function Footer() {
             <DonateBtn />
           </Box>
         </Flex>
-        <Divider sx={{ border: "1px solid grey", margin: "36px 0" }} />
+        <Divider sx={{ margin: "36px 0" }} />
         <Flex sx={{ justifyContent: "space-between", alignItems: "center" }}>
           <Box sx={{ color: "white", fontSize: ["12px", "16px"] }}>
             Copyright © Donate X 2024. All rights reserved.

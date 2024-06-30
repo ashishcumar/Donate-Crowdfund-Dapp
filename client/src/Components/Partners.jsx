@@ -7,7 +7,6 @@ function Partners() {
   return (
     <Grid
       sx={{
-        border: "2px solid red",
         padding: ["24px", "64px 48px"],
         minHeight: "600px",
       }}
@@ -16,7 +15,6 @@ function Partners() {
         sx={{
           height: "100%",
           width: "100%",
-          border: "2px solid red",
           borderRadius: "24px",
           position: "relative",
           overflow: "hidden",
@@ -32,7 +30,6 @@ function Partners() {
             position: "absolute",
             height: "500px",
             objectFit: "contain",
-            border: "1px solid black",
             top: ["-40%", "-50%"],
             right: ["-40%", "-10%"],
             animation: "rotate 30s linear infinite",
@@ -56,7 +53,6 @@ function Partners() {
             position: "absolute",
             height: "500px",
             objectFit: "contain",
-            border: "1px solid black",
             bottom: ["-40%", "-50%"],
             left: ["-40%", "-10%"],
             animation: "rotate 30s linear infinite",

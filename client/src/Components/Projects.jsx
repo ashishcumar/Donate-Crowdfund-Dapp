@@ -22,7 +22,6 @@ function Projects() {
   return (
     <Grid
       sx={{
-        border: "2px solid red",
         padding: ["24px", "64px 48px"],
       }}
     >
@@ -70,7 +69,6 @@ function Projects() {
           sx={{
             height: "60px",
             width: "60px",
-            border: "1px solid red",
             position: "absolute",
             top: "50%",
             right: "0",
@@ -121,8 +119,6 @@ function Projects() {
                   overflow: "hidden",
                   boxShadow: "primary",
                   margin: "12px 0",
-                  // border: "1px solid #5c6a6aaa",
-                  border: "1px solid red",
                 }}
               >
                 <Image
@@ -172,7 +168,6 @@ function Projects() {
                 >
                   <Flex
                     sx={{
-                      border: "1px solid red",
                       gap: "12px",
                       alignItems: "center",
                     }}
@@ -207,7 +202,6 @@ function Projects() {
                   </Flex>
                   <Flex
                     sx={{
-                      border: "1px solid red",
                       gap: "12px",
                       alignItems: "center",
                     }}

@@ -14,9 +14,7 @@ function WhatBeDo() {
         height: ["fit-content"],
         width: "100%",
         padding: ["24px", "64px 48px"],
-        border: "2px solid black",
         background: "tertiary",
-        // placeContent: "center",
         textAlign: "center",
       }}
     >
@@ -62,10 +60,10 @@ function WhatBeDo() {
         {whatBeDo.map((card) => {
           return (
             <Grid
+            key={card.title}
               sx={{
                 gridTemplateColumns: ["1fr", "1fr", "1fr 4fr"],
                 gap: ["12px", "24px"],
-                // border: "1px solid black",
                 padding: ["24px", "64px 48px"],
                 background: "white",
                 boxShadow: "0 5px 14px 0 rgba(8, 15, 52, 0.04)",
@@ -82,7 +80,6 @@ function WhatBeDo() {
               />
               <Box
                 sx={{
-                  border: "1px solid red",
                   width: "100%",
                   textAlign: "left",
                 }}

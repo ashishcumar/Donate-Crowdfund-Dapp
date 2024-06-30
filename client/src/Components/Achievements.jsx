@@ -21,7 +21,6 @@ function Achievements() {
           position: "absolute",
           height: "500px",
           objectFit: "contain",
-          border: "1px solid black",
           top: ["-40%", "-50%"],
           left: ["-40%", "-10%"],
           animation: "rotate 20s linear infinite",
@@ -38,11 +37,10 @@ function Achievements() {
       />
       <Grid
         sx={{
-          border: "2px solid red",
-          gridTemplateColumns: ["1fr", "1fr", "2fr 3fr"],
+          gridTemplateColumns: ["1fr", "1fr", "3fr 3fr"],
         }}
       >
-        <Box sx={{ border: "2px solid red" }}>
+        <Box sx={{textAlign:'center'}}>
           <Text
             color="secondary"
             margin={"12px 0"}
@@ -82,7 +80,7 @@ function Achievements() {
             sx={{
               width: ["100%", "80%"],
               fontSize: ["14px", "18px"],
-              margin: "12px 0 24px 0",
+              margin: "12px auto 24px auto",
               // color
             }}
           >
@@ -100,10 +98,10 @@ function Achievements() {
         </Box>
         <Grid
           sx={{
-            border: "2px solid red",
             gap: "24px",
             gridTemplateColumns: ["1fr 1fr", "1fr 1fr 1fr"],
             placeContent: "center",
+            borderLeft:["",  "1px solid #5c6a6a"],
           }}
         >
           {achievements.map((card) => {
@@ -111,7 +109,6 @@ function Achievements() {
               <Box
                 key={card.text}
                 sx={{
-                  border: "1px solid yellow",
                   width: "fit-content",
                   margin: "auto",
                 }}

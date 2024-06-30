@@ -21,6 +21,10 @@ import treeIconGreenBg from "../assets/treesIconGreenBg.svg";
 import heart from "../assets/heart.svg";
 import heartOutline from "../assets/heartOutline.svg";
 import treeIcon from "../assets/treeIcon.svg";
+import donate100 from "../assets/donate100.png";
+import donate500 from "../assets/donate500.png";
+import donateCustom from "../assets/donateCustom.png";
+import donate300 from "../assets/donate300.png";
 
 export const achievements = [
   {
@@ -166,3 +170,32 @@ export const whyUsImgPointer = [
     text: "Volunteers worldwide",
   },
 ];
+
+export const donateCards = [
+  {
+    money: "5 Eth",
+    text: "Donate 5 Eth to support global reforestation efforts.",
+    icon: donate100,
+    value: 0.1,
+  },
+  {
+    money: "10 Eth",
+    text: "Contribute 10 Eth to protect forests and biodiversity.",
+    icon: donate300,
+    value: 0.1,
+  },
+  {
+    money: "50 Eth",
+    text: "Support our mission with a donation of 50 Eth.",
+    icon: donate500,
+    value: 0.1,
+  },
+  {
+    money: "Custom",
+    text: "Choose your donation amount to help reforest the world.",
+    icon: donateCustom,
+    value: 0,
+  },
+];
+
+export const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
