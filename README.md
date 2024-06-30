@@ -6,7 +6,7 @@ Welcome to Donate X, a decentralized application (DApp) designed for crowdfundin
 
 - **Donation Options**: Users can donate fixed amounts of 5, 10, or 50 Eth, or choose a custom amount.
 - **Withdrawal**: The owner can withdraw donated funds to their account.
-- **Latest Donations Table**: Displays the 10 most recent donations from all users.
+- **Latest Donations Table**: Displays the 10 most recent donations.
 
 ## How to Use
 
@@ -28,4 +28,4 @@ Welcome to Donate X, a decentralized application (DApp) designed for crowdfundin
   - Alchemy (for Ethereum)
   - Firebase (for hosting and deployment)
 
-  
+
