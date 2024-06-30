@@ -1,6 +1,7 @@
 import {
   Box,
   Grid,
+  Skeleton,
   Table,
   TableContainer,
   Tbody,
@@ -91,42 +92,55 @@ function DonationTable({ donations }) {
             </Tr>
           </Thead>
           <Tbody sx={{ margin: "12px 0" }}>
-            {donations?.length
-              ? donations.map((donation) => {
-                  return (
-                    <Tr key={donation?.from} sx={{ margin: "8px 0" }}>
-                      <Td
-                        sx={{
-                          textAlign: "center",
-                          fontSize: ["14px", "16px"],
-                          padding: "12px 0",
-                        }}
-                      >
-                        {donation.date}
-                      </Td>
-                      <Td
-                        sx={{
-                          textAlign: "center",
-                          fontSize: ["14px", "16px"],
-                          padding: "12px 0",
-                        
-                        }}
-                      >
-                        {donation?.from}
-                      </Td>
-                      <Td
-                        sx={{
-                          textAlign: "center",
-                          fontSize: ["14px", "16px"],
-                          padding: "12px 0",
-                        }}
-                      >
-                        {donation?.amount}
-                      </Td>
-                    </Tr>
-                  );
-                })
-              : null}
+            {donations?.length ? (
+              donations.map((donation) => {
+                return (
+                  <Tr key={donation?.from} sx={{ margin: "8px 0" }}>
+                    <Td
+                      sx={{
+                        textAlign: "center",
+                        fontSize: ["14px", "16px"],
+                        padding: "12px 0",
+                      }}
+                    >
+                      {donation.date}
+                    </Td>
+                    <Td
+                      sx={{
+                        textAlign: "center",
+                        fontSize: ["14px", "16px"],
+                        padding: "12px 0",
+                      }}
+                    >
+                      {donation?.from}
+                    </Td>
+                    <Td
+                      sx={{
+                        textAlign: "center",
+                        fontSize: ["14px", "16px"],
+                        padding: "12px 0",
+                      }}
+                    >
+                      {donation?.amount}
+                    </Td>
+                  </Tr>
+                );
+              })
+            ) : (
+              <>
+                <Tr key={"key"} sx={{ margin: "8px 0" }}>
+                  <Td>
+                    <Skeleton height="20px" />
+                  </Td>
+                  <Td>
+                    <Skeleton height="20px" />
+                  </Td>
+                  <Td>
+                    <Skeleton height="20px" />
+                  </Td>
+                </Tr>
+              </>
+            )}
           </Tbody>
         </Table>
       </TableContainer>
@@ -139,7 +153,7 @@ function DonationTable({ donations }) {
           textAlign: "center",
         }}
       >
-       & many more...
+        & many more...
       </Text>
     </Grid>
   );

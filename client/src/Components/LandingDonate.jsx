@@ -83,7 +83,7 @@ function LandingDonate({ setDonations }) {
       for (let i = resLength - 1; i >= 0; i--) {
         const donationObj = {
           date: new Date(Number(res[1][i][1]) * 1000).toDateString(),
-          amount: weiToEth(res[1][i][0]) * 100 + " Eth",
+          amount: weiToEth(res[1][i][0]) * 10000 + " Eth",
           from: res[0][i],
         };
         donations.push(donationObj);
@@ -133,7 +133,7 @@ function LandingDonate({ setDonations }) {
         showToast({
           title: "Successfully donated",
           description: `Thank you for your donation of ${
-            weiToEth(b) * 100
+            weiToEth(b) * 10000
           } ETH`,
           status: "success",
           duration: 3000,

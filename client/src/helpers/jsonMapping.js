@@ -176,19 +176,19 @@ export const donateCards = [
     money: "5 Eth",
     text: "Donate 5 Eth to support global reforestation efforts.",
     icon: donate100,
-    value: 0.1,
+    value: 0.0001,
   },
   {
     money: "10 Eth",
     text: "Contribute 10 Eth to protect forests and biodiversity.",
     icon: donate300,
-    value: 0.1,
+    value: 0.0001,
   },
   {
     money: "50 Eth",
     text: "Support our mission with a donation of 50 Eth.",
     icon: donate500,
-    value: 0.1,
+    value: 0.0001,
   },
   {
     money: "Custom",
@@ -198,4 +198,5 @@ export const donateCards = [
   },
 ];
 
-export const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+// export const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+export const contractAddress = "0x1ad6ead91051697614da067e8252aa6caaf844a5";

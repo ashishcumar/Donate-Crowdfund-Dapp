@@ -16,8 +16,6 @@ contract CrowdFund {
     // Events :-
     event NewDonation(address donor, uint256 amount);
     event WithdrawAccess(address user, uint256 timestamp);
-    event RevokeWithdraw(address user, uint256 timestamp);
-    event AmountWithdrawal(uint256 amount, uint256 timestamp);
 
     constructor() {
         owner = msg.sender;
@@ -69,13 +67,11 @@ contract CrowdFund {
 
     function revokeWithdraw(address _user) external {
         withdrawAccess[_user] = false;
-        emit RevokeWithdraw(_user, block.timestamp);
     }
 
     function withdraw() external checkWithDrawAccess {
         uint256 contractBalance = address(this).balance;
         require(contractBalance > 0, "Contract balance is zero");
         payable(msg.sender).transfer(contractBalance);
-        emit AmountWithdrawal(contractBalance, block.timestamp);
     }
 }
