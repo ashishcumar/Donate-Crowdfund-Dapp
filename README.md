@@ -7,6 +7,11 @@ Welcome to Donate X, a decentralized application (DApp) designed for crowdfundin
 Visit the live project: [Donate X DApp](https://donation3-0.web.app/)
 Project Video :- https://youtu.be/GpRjs0aBNVg
 
+![Landing Section](client/src/assets/readme/landing.png)
+![Projects Section](client/src/assets/readme/projects.png)
+![Donation Cards Section](client/src/assets/readme/donationCards.png)
+![Donation History Section](client/src/assets/readme/donationHistory.png)
+
 ## Features
 
 - **Donation Options**: Users can donate fixed amounts of 5, 10, or 50 Eth, or choose a custom amount.
